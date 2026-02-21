@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clean slate project">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>New Project</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="fixed-top pt-4">
+    <div class="container d-flex justify-content-center">
+        <!-- Centered Pill Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-pill bg-white shadow-sm rounded-pill px-lg-5 px-4 py-3 border">
+            <a class="navbar-brand me-lg-5 me-4 py-0" href="index.html">
+                <img src="images/logo.svg" alt="essel" height="30">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse anek-font" id="mainNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PACKAGING
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow rounded-4 mt-3">
+                            <li><a class="dropdown-item py-2 px-4" href="#">Flexible Packaging</a></li>
+                            <li><a class="dropdown-item py-2 px-4" href="#">Rigid Packaging</a></li>
+                            <li><a class="dropdown-item py-2 px-4" href="#">Custom Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">EPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">WAREHOUSING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">SUSTAINABILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">CAREERS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="ri-menu-3-line fs-2"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Offcanvas for Mobile -->
+<div class="offcanvas offcanvas-end anek-font" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header border-bottom p-4">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item mb-2">
+                <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown mb-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    PACKAGING
+                </a>
+                <ul class="dropdown-menu border-0 shadow-none ps-3">
+                    <li><a class="dropdown-item" href="#">Flexible Packaging</a></li>
+                    <li><a class="dropdown-item" href="#">Rigid Packaging</a></li>
+                    <li><a class="dropdown-item" href="#">Custom Solutions</a></li>
+                </ul>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#">EPE</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#">WAREHOUSING</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#">SUSTAINABILITY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CAREERS</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+            <div class="hero-bg">
+                <img src="https://placehold.co/1920x1080?text=" alt="Industrial Background">
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                Powering Businesses With Reliable & Sustainable Packaging
+                            </h1>
+                            <p class="hero-subtitle">
+                                A Responsible Manufacturing Group Delivering Safe, Sustainable And Efficient Disposable
+                                Solutions Across Industries.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary-custom anek-font text-decoration-none">
+                                    CONTACT US <i class="ri-arrow-right-up-long-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="section intro-section bg-white">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-7">
+                        <div class="pre-title anek-font">// ABOUT US</div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <h2 class="section-title fs-4">
+                            We Provide Reliable, Scalable, And Sustainable <span>Packaging Solutions Designed To Support
+                                Modern Businesses.</span>
+                        </h2>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <p class="section-desc">
+                            We Supply High-Performance Disposable Solutions Designed For Hygiene, Efficiency, And
+                            Sustainability. Built To Support Businesses With Reliable And Responsible Everyday
+                            Essentials.
+                        </p>
+                        <a href="#" class="btn btn-primary-custom anek-font text-decoration-none">
+                            READ MORE ABOUT US <i class="ri-arrow-right-up-long-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="stats-row  pt-5">
+                    <div class="row g-0">
+                        <div class="col-6 col-lg-3 stat-item">
+                            <div class="stat-value js-counter" data-count="10">0</div>
+                            <div class="stat-label text-uppercase">Production Capacity ( Units / Month)</div>
+                        </div>
+                        <div class="col-6 col-lg-3 stat-item">
+                            <div class="stat-value js-counter" data-count="50000">0</div>
+                            <div class="stat-label text-uppercase">Warehousing Infrastructure (Sq. Ft.)</div>
+                        </div>
+                        <div class="col-6 col-lg-3 stat-item">
+                            <div class="stat-value js-counter" data-count="100">0</div>
+                            <div class="stat-label text-uppercase">Active clients Across India & Global</div>
+                        </div>
+                        <div class="col-6 col-lg-3 stat-item">
+                            <div class="stat-value js-counter" data-count="30">0</div>
+                            <div class="stat-label text-uppercase">Industry Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Solutions Section -->
+        <section class="section solutions-section bg-light ">
+            <div class="container">
+                <div class="row align-items-end mb-5 gy-4">
+                    <div class="col-lg-7">
+                        <div class="pre-title anek-font">// WHAT WE SOLVE</div>
+                    </div>
+                    <div class="col-lg-7">
+
+                        <h2 class="section-title">
+                            <span>Packaging Solutions</span> Built For Scale
+                        </h2>
+                    </div>
+                    <div class="col-lg-5 ps-lg-5">
+                        <p class="section-desc mb-0 text-dark">
+                            Businesses Need Reliable, Scalable, And Sustainable Packaging. Essel India Delivers
+                            Consistent Quality And Timely Supply With Strong Manufacturing And Infrastructure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="horizontal-scroll-wrapper mt-5">
+                    <div class="horizontal-scroll-track gap-4">
+                        <div class="solution-card">
+                            <div class="card-bg">
+                                <img src="https://placehold.co/600x800?text=" alt="Reliable Bulk Supply">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-tag">RELIABLE BULK SUPPLY</span>
+                                <h3 class="card-title">Consistent High-Volume Production To Meet Growing Business
+                                    Demands Without Disruption.</h3>
+                            </div>
+                        </div>
+
+                        <div class="solution-card">
+                            <div class="card-bg">
+                                <img src="https://placehold.co/600x800?text=" alt="Reliable Bulk Supply">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-tag">CONSISTENT PRODUCT QUALITY</span>
+                                <h3 class="card-title">Standardized Manufacturing Ensures Uniform Quality
+                                    Across Every Batch.</h3>
+                            </div>
+                        </div>
+
+                        <div class="solution-card">
+                            <div class="card-bg">
+                                <img src="https://placehold.co/600x800?text=" alt="Sustainable Alternatives">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-tag">SUSTAINABLE ALTERNATIVES</span>
+                                <h3 class="card-title">Eco-Friendly Materials Designed To Support Responsible And
+                                    Future-Ready Packaging.</h3>
+                            </div>
+                        </div>
+
+                        <div class="solution-card">
+                            <div class="card-bg">
+                                <img src="https://placehold.co/600x800?text=" alt="Reliable Bulk Supply">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-tag">CUSTOM DESIGN SOLUTIONS</span>
+                                <h3 class="card-title">Tailored Packaging Concepts Developed To Meet Unique Brand
+                                    Requirements And Functional Needs.</h3>
+                            </div>
+                        </div>
+
+                        <div class="solution-card">
+                            <div class="card-bg">
+                                <img src="https://placehold.co/600x800?text=" alt="Sustainable Alternatives">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-tag">FAST LOGISTICS & DELIVERY</span>
+                                <h3 class="card-title">Optimized Distribution Network Ensuring Timely Delivery To
+                                    Support Your Fast-Paced Operations.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section bg-white">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-8 text-center">
+                        <div class="pre-title anek-font mb-4">// Our Brands</div>
+                        <h2 class="section-title display-3 mb-4">
+                            One Company. <span>Multiple Solutions.</span>
+                        </h2>
+                        <p class="section-desc">Built to support businesses with reliable and responsible everyday
+                            essentials.</p>
+                    </div>
+                </div>
+
+                <div class="row mt-3 g-4 brands-stack-wrapper">
+                    <!-- Card 1 – Eatons -->
+                    <div class="col-12 brand-stack-item">
+                        <div class="brand-card bg-brand-1 p-5">
+                            <div class="row gy-4">
+                                <div class="col-lg-6">
+                                    <div class="brand-content pe-lg-4">
+                                        <h3 class=" fw-medium mb-4 mt-5">Eatons – Sustainable Tableware</h3>
+                                        <p class="brand-desc mb-4">
+                                            Biodegradable bagasse, aluminum kitchenware, and reusable containers
+                                            designed for food service, hospitality, and retail.
+                                        </p>
+                                        <div class="brand-tags mb-5">
+                                            <span class="brand-pill">ECO-FRIENDLY</span>
+                                            <span class="brand-pill">BAGASSE</span>
+                                            <span class="brand-pill">TABLEWARE</span>
+                                            <span class="brand-pill">RETAIL READY</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary-custom anek-font mb-4">
+                                            EXPLORE EATONS <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="brand-image">
+                                        <img src="https://placehold.co/600x600?text=Eatons"
+                                            alt="Eatons Sustainable Tableware" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 – Essel Packaging -->
+                    <div class="col-12 brand-stack-item">
+                        <div class="brand-card bg-brand-2 p-5">
+                            <div class="row  gy-4">
+                                <div class="col-lg-6">
+                                    <div class="brand-content pe-lg-4">
+                                        <h3 class=" fw-medium mb-4 mt-5">Essel Packaging – Industrial Solutions
+                                        </h3>
+                                        <p class="brand-desc mb-4">
+                                            PP, HIPS, injection-molded containers, and PE rolls & sheets engineered for
+                                            durability and performance.
+                                        </p>
+                                        <div class="brand-tags mb-5">
+                                            <span class="brand-pill">INDUSTRIAL</span>
+                                            <span class="brand-pill">PP & HIPS</span>
+                                            <span class="brand-pill">DURABLE</span>
+                                            <span class="brand-pill">CUSTOM MOLDING</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary-custom anek-font">
+                                            EXPLORE ESSEL <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="brand-image">
+                                        <img src="https://placehold.co/600x600?text=Essel+Packaging"
+                                            alt="Essel Packaging" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 – Innovative Packaging -->
+                    <div class="col-12 brand-stack-item">
+                        <div class="brand-card bg-brand-3 p-5">
+                            <div class="row  gy-4">
+                                <div class="col-lg-6">
+                                    <div class="brand-content pe-lg-4">
+                                        <h3 class=" fw-medium mb-4 mt-5">Innovative Packaging</h3>
+                                        <p class="brand-desc mb-4">
+                                            Producing PP & HIPS cups and containers designed to meet diverse packaging
+                                            needs.
+                                        </p>
+                                        <div class="brand-tags mb-5">
+                                            <span class="brand-pill">PRECISION</span>
+                                            <span class="brand-pill">VERSATILE</span>
+                                            <span class="brand-pill">FOOD GRADE</span>
+                                            <span class="brand-pill">ADVANCED TECH</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary-custom anek-font ">
+                                            EXPLORE INNOVATIVE <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="brand-image">
+                                        <img src="https://placehold.co/600x600?text=Innovative"
+                                            alt="Innovative Packaging" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 – Durable Food Storage -->
+                    <div class="col-12 brand-stack-item">
+                        <div class="brand-card bg-brand-4 p-5">
+                            <div class="row  gy-4">
+                                <div class="col-lg-6">
+                                    <div class="brand-content pe-lg-4">
+                                        <h3 class=" fw-medium mb-4 mt-5">Durable Food Storage</h3>
+                                        <p class="brand-desc mb-4">
+                                            Manufacturing robust, reusable plastic food containers through advanced
+                                            injection moulding techniques.
+                                        </p>
+                                        <div class="brand-tags mb-5">
+                                            <span class="brand-pill">ROBUST</span>
+                                            <span class="brand-pill">REUSABLE</span>
+                                            <span class="brand-pill">BPA FREE</span>
+                                            <span class="brand-pill">LONG-LASTING</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary-custom anek-font ">
+                                            EXPLORE DURABLES <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="brand-image">
+                                        <img src="https://placehold.co/600x600?text=Food+Storage"
+                                            alt="Durable Food Storage" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 – Industrial excellence -->
+                    <div class="col-12 brand-stack-item">
+                        <div class="brand-card bg-brand-5 p-5">
+                            <div class="row  gy-4">
+                                <div class="col-lg-6">
+                                    <div class="brand-content pe-lg-4">
+                                        <h3 class=" fw-medium mb-4 mt-5">Industrial Excellence</h3>
+                                        <p class="brand-desc mb-4">
+                                            Delivering EPE rolls and sheets, essential for industrial packaging and
+                                            mattress applications.
+                                        </p>
+                                        <div class="brand-tags mb-5">
+                                            <span class="brand-pill">EPE ROLLS</span>
+                                            <span class="brand-pill">SHEETS</span>
+                                            <span class="brand-pill">PROTECTIVE</span>
+                                            <span class="brand-pill">HEAVY DUTY</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary-custom anek-font">
+                                            EXPLORE INDUSTRIAL <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="brand-image">
+                                        <img src="https://placehold.co/600x600?text=Industrial+Excellence"
+                                            alt="Industrial Excellence" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products Section -->
+        <section class="section pt-0 bg-white" id="products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="pre-title anek-font mb-4">// Our Products</div>
+                        <h2 class="section-title mb-5">Discover our product line for yourself</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5 gy-4">
+                    <div class="col-lg-8">
+                        <div class="product-tabs d-flex gap-3">
+                            <button class="btn-tab active" data-filter="essel">ESSEL PRODUCTS</button>
+                            <button class="btn-tab" data-filter="eatons">EATONS PRODUCTS</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#" class="view-all-link btn-primary-custom anek-font text-decoration-none">
+                            VIEW ALL PRODUCTS <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row g-4 product-grid">
+                    <!-- Essel Products -->
+                    <div class="col-lg-4 col-md-6 product-item" data-category="essel">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge-product">NEW</span>
+                                <img src="https://placehold.co/600x600?text=Printed+Cups" alt="Printed Cups"
+                                    class="img-fluid">
+                                <div class="product-overlay">
+                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="product-info mt-4">
+                                <h4 class="product-name h5 fw-medium mb-1">Printed Cups (250ml)</h4>
+                                <p class="product-price mb-0">₹299.00 – ₹699.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 product-item" data-category="essel">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge-product">NEW</span>
+                                <img src="https://placehold.co/600x600?text=PP+Containers" alt="PP Containers"
+                                    class="img-fluid">
+                                <div class="product-overlay">
+                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="product-info mt-4">
+                                <h4 class="product-name h5 fw-medium mb-1">PP Injection Molded Containers</h4>
+                                <p class="product-price mb-0">₹450.00 – ₹899.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 product-item" data-category="essel">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge-product">SALE</span>
+                                <img src="https://placehold.co/600x600?text=PE+Rolls" alt="PE Rolls" class="img-fluid">
+                                <div class="product-overlay">
+                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="product-info mt-4">
+                                <h4 class="product-name h5 fw-medium mb-1">PE Rolls & Sheets</h4>
+                                <p class="product-price mb-0">₹1,200.00 – ₹2,500.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eatons Products (Hidden initially by JS or CSS) -->
+                    <div class="col-lg-4 col-md-6 product-item" data-category="eatons">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge-product">NEW</span>
+                                <img src="https://placehold.co/600x600?text=Bagasse+Bowls" alt="Bagasse Bowls"
+                                    class="img-fluid">
+                                <div class="product-overlay">
+                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="product-info mt-4">
+                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Disposable Bowls (350 ml)</h4>
+                                <p class="product-price mb-0">₹299.00 – ₹499.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 product-item" data-category="eatons">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge-product">SALE</span>
+                                <img src="https://placehold.co/600x600?text=Plates" alt="Plates" class="img-fluid">
+                                <div class="product-overlay">
+                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="product-info mt-4">
+                                <h4 class="product-name h5 fw-medium mb-1">Disposable 4 Compartment Plates (11 Inch)
+                                </h4>
+                                <p class="product-price mb-0">₹399.00 – ₹1,199.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 product-item" data-category="eatons">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge-product">NEW</span>
+                                <img src="https://placehold.co/600x600?text=Dinner+Plates" alt="Dinner Plates"
+                                    class="img-fluid">
+                                <div class="product-overlay">
+                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="product-info mt-4">
+                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Round Dinner Plates (10 Inch)</h4>
+                                <p class="product-price mb-0">₹499.00 – ₹899.00</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials-section bg-light overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center justify-content-between mb-5">
+                    <div class="col-lg-6">
+                        <div class="pre-title anek-font mb-4">// CLIENT TESTIMONIALS</div>
+                        <h2 class="section-title mb-0">Trusted By Businesses <span class="text-primary">That Demand
+                                Reliability</span></h2>
+                    </div>
+                    <div class="col-lg-4  mt-4 mt-lg-0 offset-lg-1">
+                        <p class="text-muted small mb-0 pe-lg-4">
+                            From Large-Scale Manufacturing To Sustainable Packaging, Our Clients Rely On Us For
+                            Consistency, Quality, And Long-Term Partnership.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper testimonial-swiper pb-0">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card bg-grey-light">
+                                <div class="rating mb-4">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-5">
+                                    We have been working with Essel India for several years now, and they never fail to
+                                    impress us. Their packaging solutions are sturdy, customizable, and competitively
+                                    priced. Looking forward to more successful collaborations!
+                                </p>
+                                <div class="user-profile d-flex align-items-center">
+                                    <div class="user-avatar me-3"></div>
+                                    <div class="user-info">
+                                        <h5 class="user-name mb-0">Ananya Sharma</h5>
+                                        <p class="user-designation mb-0">Restaurant Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card bg-green-light">
+                                <div class="rating mb-4">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-5">
+                                    We have been working with Essel India for several years now, and they never fail to
+                                    impress us. Their packaging solutions are sturdy, customizable, and competitively
+                                    priced. Looking forward to more successful collaborations!
+                                </p>
+                                <div class="user-profile d-flex align-items-center">
+                                    <div class="user-avatar me-3"></div>
+                                    <div class="user-info">
+                                        <h5 class="user-name mb-0">Ananya Sharma</h5>
+                                        <p class="user-designation mb-0">Restaurant Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card bg-teal-light">
+                                <div class="rating mb-4">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-5">
+                                    From food packaging to industrial containers, Essel India offers a fantastic range
+                                    of products. The team is highly responsive, and their solutions are both
+                                    cost-effective and durable. A great company to work with!
+                                </p>
+                                <div class="user-profile d-flex align-items-center">
+                                    <div class="user-avatar me-3"></div>
+                                    <div class="user-info">
+                                        <h5 class="user-name mb-0">Ananya Sharma</h5>
+                                        <p class="user-designation mb-0">Restaurant Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card bg-blue-light">
+                                <div class="rating mb-4">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-5">
+                                    We have been working with Essel India for several years now, and they never fail to
+                                    impress us. Their packaging solutions are sturdy, customizable, and competitively
+                                    priced. Looking forward to more successful collaborations!
+                                </p>
+                                <div class="user-profile d-flex align-items-center">
+                                    <div class="user-avatar me-3"></div>
+                                    <div class="user-info">
+                                        <h5 class="user-name mb-0">Ananya Sharma</h5>
+                                        <p class="user-designation mb-0">Restaurant Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Pagination Line -->
+                    <div class="testimonial-pagination-container mt-5 pt-3">
+                        <div class="testimonial-pagination h-custom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="section blog-section bg-white " id="blog">
+            <div class="container">
+                <div class="row align-items-center justify-content-between mb-5 gy-4">
+                    <div class="col-lg-5">
+                        <div class="pre-title mb-4">// BLOG</div>
+                        <h2 class="section-title mb-3">Latest Industry <span>Insights</span></h2>
+                        <p class="text-muted mb-0">Stay Updated With Trends, Innovations, And Sustainable Practices
+                            Shaping The Future Of Packaging.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+
+                        <a href="#" class="btn-primary-custom anek-font text-decoration-none">
+                            VIEW ALL BLOGS <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-featured-card">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="blog-image-wrapper">
+                                <img src="https://placehold.co/800x600" alt="Sustainable Packaging"
+                                    class="img-fluid featured-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="blog-content-wrapper">
+                                <div class="blog-category-badge mb-4">SUSTAINABILITY</div>
+                                <h3 class="blog-title mb-4">The Future Of Sustainable Packaging</h3>
+                                <p class="blog-excerpt text-muted mb-5">Explore How Eco-Friendly Materials And
+                                    Biodegradable Solutions Are Transforming The Packaging Industry.</p>
+
+                                <div class="blog-footer d-flex align-items-center justify-content-between">
+                                    <div class="blog-meta-info">
+                                        <span class="author-text anek-font">TEAM VAMA - 18 FEB, 2026</span>
+                                    </div>
+                                    <a href="#" class="btn-primary-custom anek-font text-decoration-none">READ MORE <i
+                                            class="ri-arrow-right-up-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mt-5 gy-5">
+                    <!-- Blog Card 1 -->
+                    <div class="col-lg-4">
+                        <div class="blog-grid-card">
+                            <div class="blog-grid-image-wrapper mb-4">
+                                <img src="https://placehold.co/600x400" alt="Choosing The Right Packaging"
+                                    class="img-fluid">
+                            </div>
+                            <div class="blog-grid-meta d-flex justify-content-between align-items-center mb-3">
+                                <span class="blog-category-badge-simple">SUSTAINABILITY</span>
+                                <span class="author-text-simple anek-font">TEAM VAMA - 17 FEB, 2026</span>
+                            </div>
+                            <h4 class="blog-grid-title">Choosing The Right Packaging For Your Business</h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div class="col-lg-4">
+                        <div class="blog-grid-card">
+                            <div class="blog-grid-image-wrapper mb-4">
+                                <img src="https://placehold.co/600x400" alt="Quality Packaging in FMCG"
+                                    class="img-fluid">
+                            </div>
+                            <div class="blog-grid-meta d-flex justify-content-between align-items-center mb-3">
+                                <span class="blog-category-badge-simple">FMCG BRANDS</span>
+                                <span class="author-text-simple anek-font">TEAM VAMA - 15 FEB, 2026</span>
+                            </div>
+                            <h4 class="blog-grid-title">Why Quality Packaging Matters In FMCG</h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="col-lg-4">
+                        <div class="blog-grid-card">
+                            <div class="blog-grid-image-wrapper mb-4">
+                                <img src="https://placehold.co/600x400" alt="Scaling Your Supply Chain"
+                                    class="img-fluid">
+                            </div>
+                            <div class="blog-grid-meta d-flex justify-content-between align-items-center mb-3">
+                                <span class="blog-category-badge-simple">SUSTAINABILITY</span>
+                                <span class="author-text-simple anek-font">TEAM VAMA - 18 FEB, 2026</span>
+                            </div>
+                            <h4 class="blog-grid-title">Scaling Your Supply Chain With Reliable Packaging</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer position-relative">
+    <div class="footer-top-features">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-truck-line feature-icon"></i>
+                    <h5 class="feature-title">Free Shipping</h5>
+                    <p class="feature-desc">Fast and reliable delivery across all locations.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-bank-card-line feature-icon"></i>
+                    <h5 class="feature-title">Flexible Payment</h5>
+                    <p class="feature-desc">Multiple payment options designed for your convenience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-calendar-check-line feature-icon"></i>
+                    <h5 class="feature-title">5 Days Return</h5>
+                    <p class="feature-desc">Easy returns within 5 days for a hassle-free experience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-customer-service-2-line feature-icon"></i>
+                    <h5 class="feature-title">Premium Support</h5>
+                    <p class="feature-desc">Dedicated support to assist you at every step.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="container">
+            <div class="row gy-5 justify-content-center">
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="#">Warehouses</a></li>
+                        <li><a href="#">EPE</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Useful Info</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
+                    <img src="images/logo.svg" alt="essel" class="footer-logo filter-white"
+                        style="filter: brightness(0) invert(1);">
+                    <div class="social-links">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="ri-map-pin-line"></i>
+                            <span>4 Fairlie Place, 5th Floor, Kolkata 700 001</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+913340509001">+91-33-4050 9001</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+919836364000">+91 9836364000 (Customer Support)</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-mail-line"></i>
+                            <a href="mailto:support@esselindia.com">support@esselindia.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+        <div class="container">
+            <p class="copyright mb-0">&copy; 2025 EsselIndia. All rights reserved.</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
