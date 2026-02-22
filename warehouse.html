@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clean slate project">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>New Project</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="fixed-top pt-4">
+    <div class="container d-flex justify-content-center">
+        <!-- Centered Pill Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-pill bg-white shadow-sm rounded-pill px-lg-5 px-4 py-3 border">
+            <a class="navbar-brand me-lg-5 me-4 text-primary fw-bold py-0" href="index.html">
+                <!-- <img src="images/logo.svg" alt="essel" height="30"> -->
+                ESSEL
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse anek-font" id="mainNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PACKAGING
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow rounded-4 mt-3">
+                            <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
+                            <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="epe.html">EPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="warehouse.html">WAREHOUSING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">SUSTAINABILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">CAREERS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="ri-menu-3-line fs-2"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Offcanvas for Mobile -->
+<div class="offcanvas offcanvas-end anek-font" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header border-bottom p-4">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown mb-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    PACKAGING
+                </a>
+                <ul class="dropdown-menu border-0 shadow-none ps-3">
+                    <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
+                    <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                </ul>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="epe.html">EPE</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="warehouse.html">WAREHOUSING</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#">SUSTAINABILITY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CAREERS</a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <main>
+        <!-- Warehouse Hero Section -->
+        <section class="warehouse-hero section position-relative overflow-hidden d-flex align-items-center">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative z-1">
+                <div class="row align-items-center justify-content-center py-5">
+                    <div class="col-lg-9 text-center">
+                        <nav aria-label="breadcrumb" class="mb-4">
+                            <ol class="breadcrumb justify-content-center mb-0 anek-font small">
+                                <li class="breadcrumb-item"><a href="index.html"
+                                        class="text-decoration-none text-white opacity-75">HOME</a></li>
+                                <li class="breadcrumb-item active text-white fw-medium" aria-current="page">WAREHOUSE &
+                                    INFRASTRUCTURE</li>
+                            </ol>
+                        </nav>
+                        <h1 class="display-3 fw-medium  mb-4 text-white">Infrastructure That Powers Performance</h1>
+                        <p class="lead text-white opacity-75 mb-0">Extensive warehousing capacity, streamlined
+                            logistics, and
+                            operational precision designed to support high-volume manufacturing and nationwide
+                            distribution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="section about-overview-section">
+            <div class="container">
+                <div class="row section-intro align-items-center gy-4">
+                    <div class="col-lg-5">
+                        <div class="pre-title mb-4">// OPERATIONAL BACKBONE</div>
+                        <h2 class="section-title">The Foundation of <span>Scalable Manufacturing</span></h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <p class="lead text-dark mb-4">Essel India’s warehousing and infrastructure capabilities form
+                            the
+                            operational backbone of our manufacturing ecosystem.</p>
+                        <p class="text-muted mb-0">Designed to handle large-scale inventory and support continuous
+                            supply,
+                            our facilities enable structured storage, efficient dispatch, and seamless distribution
+                            across markets. Strategically developed to align with growing demand, our infrastructure
+                            reflects long-term planning, operational discipline, and scalable capacity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure at Scale Section -->
+        <section class="section infra-scale-section bg-light">
+            <div class="container">
+                <div class="row  mb-5 gy-4">
+                    <div class="col-lg-7">
+                        <div class="pre-title mb-4">// INFRASTRUCTURE AT SCALE</div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <h2 class="section-title">Expansive Land Area for <span>High-Volume Storage</span></h2>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <p class="text-muted mb-0">Built with structured zoning and optimized layout planning, our
+                            facilities allow us to maintain consistent supply while responding dynamically to
+                            fluctuations in demand.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <div class="icon-circle mb-4 bg-primary-subtle text-primary">
+                                <i class="ri-box-3-line fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-medium mb-3">Bulk Raw Material Storage</h4>
+                            <p class="small text-muted mb-0">Ensuring steady production with large-scale storage for raw
+                                materials.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <div class="icon-circle mb-4 bg-primary-subtle text-primary">
+                                <i class="ri-checkbox-circle-line fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-medium mb-3">Segregated Finished Goods</h4>
+                            <p class="small text-muted mb-0">Organized warehousing for finished inventory ready for
+                                dispatch.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <div class="icon-circle mb-4 bg-primary-subtle text-primary">
+                                <i class="ri-truck-line fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-medium mb-3">Dedicated Loading Zones</h4>
+                            <p class="small text-muted mb-0">Optimized zones for efficient inbound and outbound
+                                movement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <div class="icon-circle mb-4 bg-primary-subtle text-primary">
+                                <i class="ri-stack-line fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-medium mb-3">Organized Palletized Systems</h4>
+                            <p class="small text-muted mb-0">Systematic inventory management using modern palletized
+                                storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capacity & Management + Logistics -->
+        <section class="section capacity-logistics-section">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+                        <div class="pe-lg-5">
+                            <div class="pre-title mb-4">// CAPACITY & MANAGEMENT</div>
+                            <h2 class="section-title mb-4">Structured for <span>Efficiency & Accuracy</span></h2>
+                            <p class="text-muted mb-5">Each facility integrates systematic storage planning and
+                                inventory
+                                management processes to ensure real-time visibility and reduced turnaround time.</p>
+
+                            <div class="capacity-list gy-4 row">
+                                <div class="col-sm-6 mb-4">
+                                    <h5 class="fw-medium h6 text-primary text-uppercase mb-2">High-Density Racking</h5>
+                                    <p class="small text-muted">Optimized vertical storage for maximum footprint
+                                        utilization.</p>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <h5 class="fw-medium h6 text-primary text-uppercase mb-2">FIFO & Batch Tracking</h5>
+                                    <p class="small text-muted">Strict inventory rotation and quality assurance
+                                        processes.</p>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <h5 class="fw-medium h6 text-primary text-uppercase mb-2">Bulk Storage Formats</h5>
+                                    <p class="small text-muted">Diverse storage solutions for different product
+                                        categories.</p>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <h5 class="fw-medium h6 text-primary text-uppercase mb-2">Inbound/Outbound Systems
+                                    </h5>
+                                    <p class="small text-muted">Structured movement ensuring rapid order fulfillment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ps-lg-5 border-start-lg">
+                            <div class="pre-title mb-4">// LOGISTICS & DISTRIBUTION</div>
+                            <h2 class="section-title mb-4">Nationwide Distribution <span>Reach</span></h2>
+                            <p class="text-muted mb-5">Essel India’s logistics framework ensures timely distribution and
+                                reliable delivery through structured supply chain coordination.</p>
+
+                            <div class="logistics-features">
+                                <div class="d-flex align-items-center mb-4 p-4 rounded-4 bg-light">
+                                    <div class="icon-box me-4 text-primary fs-3">
+                                        <i class="ri-map-2-line"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-medium mb-1">Regional & Nationwide Network</h5>
+                                        <p class="small text-muted mb-0">Reliable delivery from warehouse to destination
+                                            across India.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4 p-4 rounded-4 bg-light">
+                                    <div class="icon-box me-4 text-primary fs-3">
+                                        <i class="ri-steering-2-line"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-medium mb-1">Dedicated Transportation Coordination</h5>
+                                        <p class="small text-muted mb-0">Close coordination for seamless movement of
+                                            goods.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center p-4 rounded-4 bg-light">
+                                    <div class="icon-box me-4 text-primary fs-3">
+                                        <i class="ri-timer-flash-line"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-medium mb-1">Optimized Loading Infrastructure</h5>
+                                        <p class="small text-muted mb-0">Faster vehicle turnaround and movement
+                                            efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology & Quality -->
+        <section class="section tech-quality-section bg-light">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6">
+                        <div class="tech-image-grid position-relative">
+                            <img src="https://placehold.co/800x1000/000000/ffffff?text=Tech+Integration"
+                                alt="Technology" class="img-fluid rounded-5 shadow-lg">
+                            <div
+                                class="floating-stat bg-white p-4 rounded-4 shadow-lg position-absolute top-50 start-100 translate-middle ms-lg-n5 d-none d-lg-block">
+                                <div class="h3 fw-medium text-primary mb-0">100%</div>
+                                <div class="small fw-semibold text-muted text-uppercase">Tracking Accuracy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="pre-title mb-4">// TECHNOLOGY & QUALITY</div>
+                        <h2 class="section-title mb-4">Process Integration <span>& Quality Control</span></h2>
+                        <p class="text-muted mb-5">Our warehousing operations are supported by integrated systems that
+                            enhance accuracy, transparency, and product integrity.</p>
+
+                        <div class="accordion accordion-custom" id="warehouseAccordion">
+                            <div class="accordion-item border-0 bg-transparent mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-4 shadow-none fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Technology Integration
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#warehouseAccordion">
+                                    <div class="accordion-body text-muted pt-0">
+                                        Inventory monitoring, stock reconciliation, demand forecasting alignment, and
+                                        standardized tracking systems enhance operational control.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 bg-transparent mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-4 shadow-none fw-medium"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Quality & Compliance
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#warehouseAccordion">
+                                    <div class="accordion-body text-muted pt-0">
+                                        Facilities follow controlled storage environments, organized handling processes,
+                                        and safety-compliant designs to protect product integrity.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-4 shadow-none fw-medium"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Safety Discipline
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#warehouseAccordion">
+                                    <div class="accordion-body text-muted pt-0">
+                                        Structured access control, fire safety systems, and trained handling personnel
+                                        ensure operational efficiency and workplace safety.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Advantage -->
+        <section class="section strategic-advantage-section position-relative overflow-hidden">
+            <div class="hero-overlay"></div>
+            <div class="container text-center py-5 position-relative z-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="pre-title pre-title-white mb-4">
+                            // STRATEGIC ADVANTAGE</div>
+                        <h2 class="display-5 fw-medium mb-4 text-white">A Foundation for Strategic Growth</h2>
+                        <p class="lead text-white opacity-75 mb-0">By combining scale, organization, and system-driven
+                            processes,
+                            Essel
+                            India supports uninterrupted supply, efficient distribution, and dependable service. This
+                            foundation allows us to serve diverse industries with confidence, consistency, and
+                            scalability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section warehouse-cta bg-primary text-white py-5">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2 class="display-5 fw-medium text-white mb-4">Built for Growth. <br>Designed for Reliability.
+                        </h2>
+                        <p class="lead mb-0 opacity-75">Essel India ensures that every product moves efficiently from
+                            production to delivery, supporting long-term partnerships.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end mt-5 mt-lg-0">
+
+
+                        <a href="#" class="btn btn-light anek-font px-5 py-3 rounded-pill fw-bold text-primary">PARTNER
+                            WITH US <i class="ri-arrow-right-line ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer position-relative">
+    <div class="footer-top-features">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-truck-line feature-icon"></i>
+                    <h5 class="feature-title">Free Shipping</h5>
+                    <p class="feature-desc">Fast and reliable delivery across all locations.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-bank-card-line feature-icon"></i>
+                    <h5 class="feature-title">Flexible Payment</h5>
+                    <p class="feature-desc">Multiple payment options designed for your convenience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-calendar-check-line feature-icon"></i>
+                    <h5 class="feature-title">5 Days Return</h5>
+                    <p class="feature-desc">Easy returns within 5 days for a hassle-free experience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-customer-service-2-line feature-icon"></i>
+                    <h5 class="feature-title">Premium Support</h5>
+                    <p class="feature-desc">Dedicated support to assist you at every step.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+
+        <div class="container">
+            <div class="row gy-5 justify-content-center">
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="warehouse.html">Warehouses</a></li>
+                        <li><a href="epe.html">EPE</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Useful Info</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
+                    <img src="images/footerlogo.png" alt="essel" class="footer-logo pe-lg-3 filter-white">
+                    <div class="social-links pe-lg-4">
+                        <a href="#" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-youtube-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="ri-map-pin-line"></i>
+                            <span>4 Fairlie Place, 5th Floor, Kolkata 700 001</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+913340509001">+91-33-4050 9001</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+919836364000">+91 9836364000 (Customer Support)</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-mail-line"></i>
+                            <a href="mailto:support@esselindia.com">support@esselindia.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+
+        <div class="container">
+            <p class="copyright mb-0">&copy; 2025 EsselIndia. All rights reserved.</p>
+        </div>
+
+    </div>
+    <div class="footer-watermark">ESSEL INDIA</div>
+
+    <a href="#" class="back-to-top rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

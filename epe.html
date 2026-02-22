@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clean slate project">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>New Project</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="fixed-top pt-4">
+    <div class="container d-flex justify-content-center">
+        <!-- Centered Pill Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-pill bg-white shadow-sm rounded-pill px-lg-5 px-4 py-3 border">
+            <a class="navbar-brand me-lg-5 me-4 text-primary fw-bold py-0" href="index.html">
+                <!-- <img src="images/logo.svg" alt="essel" height="30"> -->
+                ESSEL
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse anek-font" id="mainNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PACKAGING
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow rounded-4 mt-3">
+                            <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
+                            <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="epe.html">EPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="warehouse.html">WAREHOUSING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">SUSTAINABILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">CAREERS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="ri-menu-3-line fs-2"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Offcanvas for Mobile -->
+<div class="offcanvas offcanvas-end anek-font" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header border-bottom p-4">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown mb-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    PACKAGING
+                </a>
+                <ul class="dropdown-menu border-0 shadow-none ps-3">
+                    <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
+                    <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                </ul>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="epe.html">EPE</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="warehouse.html">WAREHOUSING</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#">SUSTAINABILITY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CAREERS</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main>
+        <!-- EPE Hero Section -->
+        <section class="epe-hero section position-relative overflow-hidden d-flex align-items-center">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative z-1">
+                <div class="row align-items-center justify-content-center py-5">
+                    <div class="col-lg-8 text-center">
+                        <nav aria-label="breadcrumb" class="mb-4">
+                            <ol class="breadcrumb justify-content-center mb-0 anek-font small">
+                                <li class="breadcrumb-item"><a href="index.html"
+                                        class="text-decoration-none text-white opacity-75">HOME</a></li>
+                                <li class="breadcrumb-item active text-white fw-bold" aria-current="page">EPE PACKAGING
+                                </li>
+                            </ol>
+                        </nav>
+                        <h1 class="display-3 fw-bold mb-5 text-white">Versatile Protection with EPE Foam</h1>
+                        <p class="lead text-white opacity-75 mb-0">High-performance Expanded Polyethylene (EPE)
+                            solutions
+                            designed for superior cushioning, durability, and multi-industry applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Overview -->
+        <section class="section about-overview-section">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-5">
+                        <div class="pre-title mb-4">// PRODUCT OVERVIEW</div>
+                        <h2 class="section-title">The Standard for <span>Premium Protection</span></h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <p class="lead text-dark mb-4">EPE (Expanded Polyethylene) foam is a versatile product with
+                            applications ranging from construction and automotive parts to sports goods and protective
+                            covers.</p>
+                        <p class="text-muted mb-0">Manufactured through an advanced extrusion process, our EPE foam has
+                            a
+                            fine, uniform microcellular structure. We utilize heat lamination to form composite
+                            multi-layered structures with homogeneous bonding and taper-free surfaces, ensuring maximum
+                            impact resistance and longevity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Grid -->
+        <section class="section epe-features-section bg-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="pre-title mb-4">// ADVANCED PROPERTIES</div>
+                        <h2 class="section-title">Engineered for <span>Excellence</span></h2>
+                        <p class="text-muted">EPE foam stands out due to its unique combination of physical and chemical
+                            properties, making it the preferred choice for delicate and heavy-duty applications alike.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Feature Cards -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-shield-check-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Excellent Cushioning</h5>
+                            <p class="small text-muted mb-0">Highly shock-absorbent cellular structure provides superior
+                                protection for delicate objects.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-restart-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Resilient & Tough</h5>
+                            <p class="small text-muted mb-0">Fracture and shatter-proof; regains its original shape
+                                after
+                                impact or stress.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-drop-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Moisture Resistant</h5>
+                            <p class="small text-muted mb-0">Virtually impermeable, ensuring complete protection from
+                                water and humidity.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-flask-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Chemical Resistant</h5>
+                            <p class="small text-muted mb-0">Inert to most corrosive chemicals, acids, and alkalies
+                                without losing texture.</p>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-temp-hot-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Thermal Insulation</h5>
+                            <p class="small text-muted mb-0">Extremely low thermal conductivity makes it an ideal
+                                insulator in HVAC and construction.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-flashlight-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Static Resistant</h5>
+                            <p class="small text-muted mb-0">Does not attract atmospheric dust; anti-static pink grades
+                                available for electronics.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-leaf-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">CFC-Free & Safe</h5>
+                            <p class="small text-muted mb-0">Chlorofluorocarbon-free, non-toxic, and odourless; safe for
+                                food packaging.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="infra-card p-4 rounded-4 bg-white h-100 shadow-sm border-0">
+                            <i class="ri-tools-line fs-4 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-medium mb-2">Easy to Fabricate</h5>
+                            <p class="small text-muted mb-0">Can be melted and shaped into rolls, planks, and reinforced
+                                sheets without complex molds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Showcase -->
+        <section class="section epe-applications-section">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6">
+                        <div class="tech-image-grid position-relative">
+                            <img src="images/ep-1.png" alt="EPE Applications" class="img-fluid rounded-5 ">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="pre-title mb-4">// VERSATILE APPLICATIONS</div>
+                        <h2 class="section-title mb-4">Serving Every <span>Industry Sector</span></h2>
+                        <ul class="list-unstyled custom-list gy-3 d-grid">
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="ri-checkbox-circle-fill text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Electronics & Appliances</h6>
+                                    <p class="small text-muted mb-0">Encapsulation blocks and ribs for TVs, computers,
+                                        and medical equipment.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="ri-checkbox-circle-fill text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">HVAC & Construction</h6>
+                                    <p class="small text-muted mb-0">Insulation for AC ducts, split units, industrial
+                                        chillers, and cold storage.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="ri-checkbox-circle-fill text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Automotive & Marine</h6>
+                                    <p class="small text-muted mb-0">Roof tops, engine hoods, door panels, seat linings,
+                                        and floor mats.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="ri-checkbox-circle-fill text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Sports & Healthcare</h6>
+                                    <p class="small text-muted mb-0">Protective guards, helmets, gym mats, life saving
+                                        jackets, and surgical kits.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Advantage Section -->
+        <section class="section epe-temp-section position-relative overflow-hidden">
+            <div class="hero-overlay"></div>
+            <div class="container text-center py-5 position-relative z-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="pre-title mb-4 pre-title-white">
+                            // TEMPERATURE TOLERANCE</div>
+                        <h2 class="display-5 fw-medium mb-4 text-white">Effective From -40°C to 70°C</h2>
+                        <p class="lead text-white mb-0">Essel India’s EPE foam maintains its physical properties across
+                            a
+                            wide temperature range, making it reliable for export packaging and high-altitude pipe
+                            insulation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section warehouse-cta bg-primary text-white py-5">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2 class="display-5 fw-medium text-white mb-4">Protect Your Growth. <br>Secure Your Quality.
+                        </h2>
+                        <p class="lead mb-0 opacity-75">Trust Essel India for high-density EPE foam solutions that
+                            safeguard your products from factory to destination.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end mt-5 mt-lg-0">
+                        <a href="#" class="btn btn-light anek-font px-5 py-3 rounded-pill fw-bold text-primary">GET A
+                            QUOTE <i class="ri-arrow-right-line ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer position-relative">
+    <div class="footer-top-features">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-truck-line feature-icon"></i>
+                    <h5 class="feature-title">Free Shipping</h5>
+                    <p class="feature-desc">Fast and reliable delivery across all locations.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-bank-card-line feature-icon"></i>
+                    <h5 class="feature-title">Flexible Payment</h5>
+                    <p class="feature-desc">Multiple payment options designed for your convenience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-calendar-check-line feature-icon"></i>
+                    <h5 class="feature-title">5 Days Return</h5>
+                    <p class="feature-desc">Easy returns within 5 days for a hassle-free experience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-customer-service-2-line feature-icon"></i>
+                    <h5 class="feature-title">Premium Support</h5>
+                    <p class="feature-desc">Dedicated support to assist you at every step.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+
+        <div class="container">
+            <div class="row gy-5 justify-content-center">
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="warehouse.html">Warehouses</a></li>
+                        <li><a href="epe.html">EPE</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Useful Info</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
+                    <img src="images/footerlogo.png" alt="essel" class="footer-logo pe-lg-3 filter-white">
+                    <div class="social-links pe-lg-4">
+                        <a href="#" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-youtube-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="ri-map-pin-line"></i>
+                            <span>4 Fairlie Place, 5th Floor, Kolkata 700 001</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+913340509001">+91-33-4050 9001</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+919836364000">+91 9836364000 (Customer Support)</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-mail-line"></i>
+                            <a href="mailto:support@esselindia.com">support@esselindia.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+
+        <div class="container">
+            <p class="copyright mb-0">&copy; 2025 EsselIndia. All rights reserved.</p>
+        </div>
+
+    </div>
+    <div class="footer-watermark">ESSEL INDIA</div>
+
+    <a href="#" class="back-to-top rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

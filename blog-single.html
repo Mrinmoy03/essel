@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clean slate project">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>New Project</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="fixed-top pt-4">
+    <div class="container d-flex justify-content-center">
+        <!-- Centered Pill Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-pill bg-white shadow-sm rounded-pill px-lg-5 px-4 py-3 border">
+            <a class="navbar-brand me-lg-5 me-4 text-primary fw-bold py-0" href="index.html">
+                <!-- <img src="images/logo.svg" alt="essel" height="30"> -->
+                ESSEL
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse anek-font" id="mainNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PACKAGING
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow rounded-4 mt-3">
+                            <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
+                            <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="epe.html">EPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="warehouse.html">WAREHOUSING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">SUSTAINABILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">CAREERS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="ri-menu-3-line fs-2"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Offcanvas for Mobile -->
+<div class="offcanvas offcanvas-end anek-font" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header border-bottom p-4">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown mb-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    PACKAGING
+                </a>
+                <ul class="dropdown-menu border-0 shadow-none ps-3">
+                    <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
+                    <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                </ul>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="epe.html">EPE</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="warehouse.html">WAREHOUSING</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#">SUSTAINABILITY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CAREERS</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main>
+        <!-- Blog Single Hero Section -->
+        <section class="blog-single-hero section pb-5 position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="blog-single-meta mb-4 text-center mt-5">
+                            <span class="blog-category-badge mb-4">SUSTAINABILITY</span>
+                            <h1 class="blog-single-title display-4 fw-medium mb-4">The Future Of Sustainable Packaging
+                            </h1>
+                            <div class="blog-single-author anek-font text-muted">
+                                <span>BY TEAM VAMA</span>
+                                <span class="mx-2">•</span>
+                                <span>18 FEB, 2026</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-single-featured-image mb-5">
+                            <img src="https://placehold.co/1200x600" alt="Sustainable Packaging"
+                                class="img-fluid rounded-4 shadow-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Content Section -->
+        <article class="blog-article-content section py-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="rich-text-content">
+                            <p class="lead mb-5">
+                                Explore how eco-friendly materials and biodegradable solutions are transforming the
+                                packaging industry.
+                                As consumer awareness grows, businesses are shifting towards more responsible practices
+                                to minimize
+                                their environmental footprint.
+                            </p>
+
+                            <h3>The Rise of Eco-Driven Materials</h3>
+                            <p>
+                                In recent years, the push for sustainability has led to the development of innovative
+                                materials that
+                                challenge the dominance of traditional plastics. From cornstarch-based polymers to
+                                mycelium-grown
+                                packaging, the options for environmentally conscious businesses are expanding rapidly.
+                            </p>
+
+                            <blockquote class="my-5 p-5 bg-light rounded-4 border-start border-primary border-4">
+                                <p class="h4 fw-medium mb-0 italic">
+                                    "Sustainability is no longer just a buzzword; it's a fundamental requirement for the
+                                    modern supply chain."
+                                </p>
+                            </blockquote>
+
+                            <h3>Biodegradable vs. Recyclable</h3>
+                            <p>
+                                Understanding the distinction between biodegradable and recyclable materials is crucial
+                                for developing
+                                an effective sustainability strategy. While recycling reduces waste, biodegradable
+                                materials offer
+                                a circular solution that returns to the earth without leaving harmful residues.
+                            </p>
+
+                            <ul>
+                                <li><strong>Lower Carbon Footprint:</strong> Sustainable materials often require less
+                                    energy to produce.</li>
+                                <li><strong>Consumer Appeal:</strong> 72% of consumers prefer brands that utilize
+                                    eco-friendly packaging.</li>
+                                <li><strong>Regulatory Compliance:</strong> Governments worldwide are tightening
+                                    restrictions on single-use plastics.</li>
+                            </ul>
+
+                            <p>
+                                At Essel India, we are committed to leading this transformation. Our Eatons brand
+                                focuses exclusively
+                                on biodegradable bagasse and aluminum solutions that provide high performance without
+                                compromising
+                                our planet's future.
+                            </p>
+                        </div>
+
+                        <div
+                            class="blog-article-footer mt-5 pt-5 border-top d-flex justify-content-between align-items-center">
+                            <div class="article-tags">
+                                <span class="badge bg-light text-dark rounded-pill px-3 py-2 me-2">Eco-Friendly</span>
+                                <span class="badge bg-light text-dark rounded-pill px-3 py-2">Packaging</span>
+                            </div>
+                            <div class="share-article d-flex align-items-center">
+                                <span class="small text-muted me-3">SHARE THIS:</span>
+                                <a href="#" class="text-dark me-3"><i class="ri-facebook-fill fs-5"></i></a>
+                                <a href="#" class="text-dark me-3"><i class="ri-twitter-x-fill fs-5"></i></a>
+                                <a href="#" class="text-dark"><i class="ri-linkedin-fill fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Related Posts Section -->
+        <section class="section related-posts-section bg-light mt-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="h3 fw-bold mb-0">Related Insights</h2>
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    <!-- Related Card 1 -->
+                    <div class="col-lg-4">
+                        <a href="blog-single.html" class="blog-grid-card text-decoration-none">
+                            <div class="blog-grid-image-wrapper mb-4">
+                                <img src="https://placehold.co/600x400" alt="Choosing The Right Packaging"
+                                    class="img-fluid">
+                            </div>
+                            <div class="blog-grid-meta d-flex justify-content-between align-items-center mb-3">
+                                <span class="blog-category-badge-simple">SUSTAINABILITY</span>
+                                <span class="author-text-simple anek-font">TEAM VAMA - 17 FEB, 2026</span>
+                            </div>
+                            <h4 class="blog-grid-title">Choosing The Right Packaging For Your Business</h4>
+                        </a>
+                    </div>
+                    <!-- Related Card 2 -->
+                    <div class="col-lg-4">
+                        <a href="blog-single.html" class="blog-grid-card text-decoration-none">
+                            <div class="blog-grid-image-wrapper mb-4">
+                                <img src="https://placehold.co/600x400" alt="Quality Packaging" class="img-fluid">
+                            </div>
+                            <div class="blog-grid-meta d-flex justify-content-between align-items-center mb-3">
+                                <span class="blog-category-badge-simple">FMCG BRANDS</span>
+                                <span class="author-text-simple anek-font">TEAM VAMA - 15 FEB, 2026</span>
+                            </div>
+                            <h4 class="blog-grid-title">Why Quality Packaging Matters In FMCG</h4>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <a href="blog-single.html" class="blog-grid-card text-decoration-none">
+                            <div class="blog-grid-image-wrapper mb-4">
+                                <img src="https://placehold.co/600x400" alt="Supply Chain" class="img-fluid">
+                            </div>
+                            <div class="blog-grid-meta d-flex justify-content-between align-items-center mb-3">
+                                <span class="blog-category-badge-simple">WAREHOUSING</span>
+                                <span class="author-text-simple anek-font">TEAM VAMA - 14 FEB, 2026</span>
+                            </div>
+                            <h4 class="blog-grid-title">Scaling Your Supply Chain With Reliable Logistics</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer position-relative">
+    <div class="footer-top-features">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-truck-line feature-icon"></i>
+                    <h5 class="feature-title">Free Shipping</h5>
+                    <p class="feature-desc">Fast and reliable delivery across all locations.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-bank-card-line feature-icon"></i>
+                    <h5 class="feature-title">Flexible Payment</h5>
+                    <p class="feature-desc">Multiple payment options designed for your convenience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-calendar-check-line feature-icon"></i>
+                    <h5 class="feature-title">5 Days Return</h5>
+                    <p class="feature-desc">Easy returns within 5 days for a hassle-free experience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-item">
+                    <i class="ri-customer-service-2-line feature-icon"></i>
+                    <h5 class="feature-title">Premium Support</h5>
+                    <p class="feature-desc">Dedicated support to assist you at every step.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+
+        <div class="container">
+            <div class="row gy-5 justify-content-center">
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="warehouse.html">Warehouses</a></li>
+                        <li><a href="epe.html">EPE</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-column">
+                    <h4>Useful Info</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
+                    <img src="images/footerlogo.png" alt="essel" class="footer-logo pe-lg-3 filter-white">
+                    <div class="social-links pe-lg-4">
+                        <a href="#" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-youtube-fill"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="ri-map-pin-line"></i>
+                            <span>4 Fairlie Place, 5th Floor, Kolkata 700 001</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+913340509001">+91-33-4050 9001</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+919836364000">+91 9836364000 (Customer Support)</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="ri-mail-line"></i>
+                            <a href="mailto:support@esselindia.com">support@esselindia.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+
+        <div class="container">
+            <p class="copyright mb-0">&copy; 2025 EsselIndia. All rights reserved.</p>
+        </div>
+
+    </div>
+    <div class="footer-watermark">ESSEL INDIA</div>
+
+    <a href="#" class="back-to-top rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
