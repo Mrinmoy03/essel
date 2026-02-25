@@ -25,9 +25,9 @@
 
 <body>
     <header class="fixed-top pt-4">
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-end justify-content-lg-center">
         <!-- Centered Pill Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-pill bg-white shadow-sm rounded-pill px-lg-5 px-4 py-3 border">
+        <nav class="navbar navbar-expand-lg navbar-pill bg-white rounded-pill px-lg-5 px-3 py-2 border">
             <a class="navbar-brand me-lg-5 me-4 text-primary fw-bold py-0" href="index.html">
                 <!-- <img src="images/logo.svg" alt="essel" height="30"> -->
                 ESSEL
@@ -44,9 +44,68 @@
                             aria-expanded="false">
                             PACKAGING
                         </a>
-                        <ul class="dropdown-menu border-0 shadow rounded-4 mt-3">
-                            <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
-                            <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                        <ul class="dropdown-menu  bg-white border-0 shadow rounded-4 mt-3">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/tableware/">Tableware</a>
+                                <ul class="dropdown-menu border-0 bg-white rounded-4">
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/tableware/bowl/">Bowl</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/tableware/cutlery/">Cutlery</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/tableware/compartment-plate/">Compartment
+                                            Plate</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/tableware/plates/">Plates</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/reuse-food-containers/">Reuse Food
+                                    Containers</a>
+                                <ul class="dropdown-menu border-0 shadow rounded-4">
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/reuse-food-containers/250ml-container/">250ml
+                                            Container</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/reuse-food-containers/500ml-container/">500ml
+                                            Container</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/reuse-food-containers/750ml-container/">750ml
+                                            Container</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/reuse-food-containers/1000ml-container/">1000ml
+                                            Container</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/aluminum-containers/">Aluminum
+                                    Containers</a>
+                                <ul class="dropdown-menu border-0 shadow rounded-4">
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/aluminum-containers/bakeware/">Bakeware</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/aluminum-containers/packaging-containers/">Packaging
+                                            Containers</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://esselindia.com/product-category/aluminum-containers/serving-plates/">Serving
+                                            Plates</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/aluminum-foil-roll/">Aluminum Foil
+                                    Rolls</a></li>
+                            <li><a class="dropdown-item" href="https://esselindia.com/products/glasses-cups/">Glasses
+                                    &amp; Cups</a></li>
+                            <li><a class="dropdown-item" href="https://esselindia.com/products/pp-containers/">PP
+                                    Containers</a></li>
+                            <li><a class="dropdown-item" href="https://esselindia.com/products/pp-sheets/">PE Rolls
+                                    &amp; Sheets</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -59,7 +118,7 @@
                         <a class="nav-link px-3" href="sustainability.html">SUSTAINABILITY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">CONTACT US</a>
+                        <a class="nav-link px-3" href="https://esselindia.com/contact/">GET IN TOUCH</a>
                     </li>
                 </ul>
             </div>
@@ -67,45 +126,105 @@
             <!-- Mobile Toggle -->
             <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar">
-                <i class="ri-menu-3-line fs-2"></i>
+                <i class="ri-menu-3-line fs-5"></i>
             </button>
         </nav>
     </div>
 </header>
 
 <!-- Offcanvas for Mobile -->
-<div class="offcanvas offcanvas-end anek-font" tabindex="-1" id="offcanvasNavbar">
-    <div class="offcanvas-header border-bottom p-4">
-        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">MENU</h5>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<div class="offcanvas offcanvas-end anek-font mobile-nav" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header px-4 pt-4 pb-3">
+        <a href="index.html" class="offcanvas-brand text-decoration-none fw-bold">ESSEL</a>
+        <button type="button" class="mobile-nav-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="ri-close-line"></i>
+        </button>
     </div>
-    <div class="offcanvas-body p-4">
+    <div class="offcanvas-body px-4 pt-2 pb-4">
         <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item mb-2">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
             </li>
-            <li class="nav-item dropdown mb-2">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                     PACKAGING
                 </a>
                 <ul class="dropdown-menu border-0 shadow-none ps-3">
-                    <li><a class="dropdown-item" href="#">Essel Packaging</a></li>
-                    <li><a class="dropdown-item" href="#">Eatons Packaging</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle"
+                            href="https://esselindia.com/product-category/tableware/">Tableware</a>
+                        <ul class="dropdown-menu border-0 shadow-none ps-3">
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/tableware/bowl/">Bowl</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/tableware/cutlery/">Cutlery</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/tableware/compartment-plate/">Compartment
+                                    Plate</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/tableware/plates/">Plates</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle"
+                            href="https://esselindia.com/product-category/reuse-food-containers/">Reuse Food
+                            Containers</a>
+                        <ul class="dropdown-menu border-0 shadow-none ps-3">
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/reuse-food-containers/250ml-container/">250ml
+                                    Container</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/reuse-food-containers/500ml-container/">500ml
+                                    Container</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/reuse-food-containers/750ml-container/">750ml
+                                    Container</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/reuse-food-containers/1000ml-container/">1000ml
+                                    Container</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle"
+                            href="https://esselindia.com/product-category/aluminum-containers/">Aluminum Containers</a>
+                        <ul class="dropdown-menu border-0 shadow-none ps-3">
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/aluminum-containers/bakeware/">Bakeware</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/aluminum-containers/packaging-containers/">Packaging
+                                    Containers</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://esselindia.com/product-category/aluminum-containers/serving-plates/">Serving
+                                    Plates</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item"
+                            href="https://esselindia.com/product-category/aluminum-foil-roll/">Aluminum Foil Rolls</a>
+                    </li>
+                    <li><a class="dropdown-item" href="https://esselindia.com/products/glasses-cups/">Glasses &amp;
+                            Cups</a></li>
+                    <li><a class="dropdown-item" href="https://esselindia.com/products/pp-containers/">PP Containers</a>
+                    </li>
+                    <li><a class="dropdown-item" href="https://esselindia.com/products/pp-sheets/">PE Rolls &amp;
+                            Sheets</a></li>
                 </ul>
             </li>
-            <li class="nav-item mb-2">
+            <li class="nav-item">
                 <a class="nav-link" href="epe.html">EPE</a>
             </li>
-            <li class="nav-item mb-2">
+            <li class="nav-item">
                 <a class="nav-link" href="warehouse.html">WAREHOUSING</a>
             </li>
-            <li class="nav-item mb-2">
+            <li class="nav-item">
                 <a class="nav-link" href="sustainability.html">SUSTAINABILITY</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT US</a>
+                <a class="nav-link" href="https://esselindia.com/contact/"> GET IN TOUCH</a>
             </li>
         </ul>
+
+
     </div>
 </div>
 
@@ -306,22 +425,22 @@
         <div class="container-fluid p-0">
             <div class="row g-0 bt-top">
                 <div class="col-lg-3 col-md-6 feature-item">
-                    <i class="ri-truck-line feature-icon"></i>
+                    <img src="images/icons/icon-1.png" alt="" class="feature-icon mx-auto img-fluid">
                     <h5 class="feature-title">Free Shipping</h5>
                     <p class="feature-desc">Fast and reliable delivery across all locations.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 feature-item">
-                    <i class="ri-bank-card-line feature-icon"></i>
+                    <img src="images/icons/icon-2.png" alt="" class="feature-icon mx-auto img-fluid">
                     <h5 class="feature-title">Flexible Payment</h5>
                     <p class="feature-desc">Multiple payment options designed for your convenience.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 feature-item">
-                    <i class="ri-calendar-check-line feature-icon"></i>
+                    <img src="images/icons/icon-3.png" alt="" class="feature-icon mx-auto img-fluid">
                     <h5 class="feature-title">5 Days Return</h5>
                     <p class="feature-desc">Easy returns within 5 days for a hassle-free experience.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 feature-item">
-                    <i class="ri-customer-service-2-line feature-icon"></i>
+                    <img src="images/icons/icon-4.png" alt="" class="feature-icon mx-auto img-fluid">
                     <h5 class="feature-title">Premium Support</h5>
                     <p class="feature-desc">Dedicated support to assist you at every step.</p>
                 </div>
@@ -356,10 +475,13 @@
                 <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
                     <img src="images/footerlogo.png" alt="essel" class="footer-logo pe-lg-3 filter-white">
                     <div class="social-links pe-lg-4">
-                        <a href="#" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
-                        <a href="#" class="text-decoration-none"><i class="ri-twitter-x-fill"></i></a>
-                        <a href="#" class="text-decoration-none"><i class="ri-youtube-fill"></i></a>
-                        <a href="#" class="text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="https://www.facebook.com/esselindia?mibextid=wwXIfr&rdid=AK0vlzDFJYF7S1V8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YFBe1fUZ%2F%3Fmibextid%3DwwXIfr#"
+                            target="_blank" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/eatons_disposables_tableware/?igsh=NHJxc291NTkxdjJn&utm_source=qr#"
+                            target="_blank" class="text-decoration-none"><i class="ri-twitter-x-fill"></i></a>
+                        <!-- <a href="#" class="text-decoration-none" target="_blank"><i class="ri-youtube-fill"></i></a> -->
+                        <a href="https://www.linkedin.com/company/essel-kitchenware-ltd#" class="text-decoration-none"
+                            target="_blank"><i class="ri-instagram-line"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
