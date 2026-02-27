@@ -8,6 +8,8 @@
 <meta name="keywords" content="bootstrap, gulp, sass, modern web design">
 <title>Essel - Sustainability</title>
 
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@HnaS65bJ62D_SwF_dservice_4poov4ptemplate_spv3mu9/dist/email.min.js"></script>
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +27,10 @@
 
 <body>
     <header class="fixed-top pt-4">
-    <div class="container d-flex justify-content-end justify-content-lg-center">
+    <div class="container position-relative d-flex justify-content-end justify-content-lg-center">
         <!-- Centered Pill Navbar -->
         <nav class="navbar navbar-expand-lg navbar-pill bg-white rounded-pill px-lg-4 px-3 py-2 border">
-            <a class="navbar-brand me-lg-5 me-4 text-primary fw-bold py-0" href="index.html">
+            <a class="navbar-brand me-lg-4 me-3 text-primary fw-bold py-0" href="index.html">
                 <!-- <img src="images/logo.svg" alt="essel" height="30"> -->
                 ESSEL
             </a>
@@ -120,13 +122,22 @@
                     <li class="nav-item">
                         <a class="nav-link px-3" href="blog-list.html">BLOG</a>
                     </li>
+
                     <li class="nav-item d-none d-lg-flex ms-lg-3">
-                        <a class="btn-nav-pill" href="https://esselindia.com/contact/">
+                        <!-- Desktop Search Bar -->
+                        <div class="search-wrapper">
+                            <input type="text" class="search-input" placeholder="Search products...">
+                            <i class="ri-search-line search-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-flex ms-lg-1">
+                        <a class="btn-nav-pill" href="contact.html">
                             GET IN TOUCH
                         </a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link px-3" href="https://esselindia.com/contact/">GET IN TOUCH</a>
+                        <a class="nav-link px-3" href="contact.html">GET IN TOUCH</a>
                     </li>
                 </ul>
             </div>
@@ -137,6 +148,7 @@
                 <i class="ri-menu-3-line fs-5"></i>
             </button>
         </nav>
+
     </div>
 </header>
 
@@ -149,6 +161,14 @@
         </button>
     </div>
     <div class="offcanvas-body px-4 pt-2 pb-4">
+        <!-- Mobile Search Bar -->
+        <div class="mobile-search-wrapper">
+            <div class="search-group">
+                <i class="ri-search-line"></i>
+                <input type="text" class="form-control" placeholder="Search products...">
+            </div>
+        </div>
+
         <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
@@ -231,7 +251,7 @@
                 <a class="nav-link" href="blog-list.html">BLOG</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://esselindia.com/contact/"> GET IN TOUCH</a>
+                <a class="nav-link" href="contact.html"> GET IN TOUCH</a>
             </li>
         </ul>
 
@@ -255,9 +275,11 @@
                                 </li>
                             </ol>
                         </nav>
-                        <h1 class="display-3 fw-medium mb-4 text-white">Small Steps Toward a Bigger Green Impact</h1>
-                        <p class="lead text-white opacity-75 mb-0">At ‘Eatons’, we are committed to environmental
-                            responsibility by manufacturing eco-friendly throwaway dinnerware.</p>
+                        <h1 class="display-3 fw-medium mb-4 text-white">Engineering a Cleaner, <br><span
+                                class="text-white">Greener Future</span></h1>
+                        <p class="lead text-white opacity-75 mb-0 max-w-700 mx-auto">At ‘Eatons’, we are committed to
+                            environmental responsibility by manufacturing 100% biodegradable and chemical-free
+                            dinnerware that protects the planet for future generations.</p>
                     </div>
                 </div>
             </div>
@@ -302,15 +324,56 @@
             </div>
         </section>
 
-        <!-- Small Changes Section -->
-        <section class="section  bg-light">
+        <!-- Material Science Section -->
+        <section class="section bg-light overflow-hidden">
             <div class="container py-lg-4">
-                <div class="row justify-content-center text-center mb-5">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-5 order-lg-2 offset-lg-1">
+                        <div class="pre-title anek-font mb-4 text-primary">// THE EATONS ADVANTAGE</div>
+                        <h2 class="section-title mb-4">Material Science for <span>Zero Impact</span></h2>
+                        <p class="text-muted mb-4">Our Eatons products are made from 100% natural sugarcane bagasse—the
+                            fibrous residue left after juice extraction. By repurposing this agricultural waste, we
+                            create premium tableware that is completely free from harmful toxins, binders, and chemical
+                            coatings.</p>
+                        <ul class="list-unstyled custom-list mb-0">
+                            <li class="mb-3"><i class="ri-checkbox-circle-fill text-primary me-2"></i><strong>Non-Toxic
+                                    Manufacturing:</strong> No chemicals, bleaching agents, or plastic resins.</li>
+                            <li class="mb-3"><i
+                                    class="ri-checkbox-circle-fill text-primary me-2"></i><strong>Soil-to-Soil
+                                    Cycle:</strong> Products return to the earth as organic compost within 90 days.</li>
+                            <li class="mb-3"><i
+                                    class="ri-checkbox-circle-fill text-primary me-2"></i><strong>Environmentally
+                                    Safe:</strong> No harmful gases or toxic runoff during the entire production
+                                lifecycle.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="position-relative">
+                            <img src="https://placehold.co/600x600?text=EATONS+MANUFACTURING" alt="Eco Manufacturing"
+                                class="img-fluid">
+                            <div class="floating-badge position-absolute top-0 end-0 translate-middle bg-success text-white p-2 rounded-circle d-flex align-items-center justify-content-center shadow"
+                                style="width: 100px; height: 100px; z-index: 2;">
+                                <div class="text-center line-height-1">
+                                    <div class="fw-medium text-white h4 mb-0">100%</div>
+                                    <div class="small tracking-wider">NATURAL</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Eatons (Small Changes) Section -->
+        <section class="section bg-white text-center">
+            <div class="container py-lg-4">
+                <div class="row justify-content-center mb-5">
                     <div class="col-lg-8">
-                        <h2 class="section-title mb-4">Little Changes, <span class="text-primary">Significant
-                                Effects</span></h2>
-                        <p class="lead text-muted">We think that little changes have significant effects. Businesses can
-                            encourage a good environmental change by choosing packaging and tableware carefully.</p>
+                        <div class="pre-title anek-font mb-4 text-primary">// SUSTAINABLE INNOVATION</div>
+                        <h2 class="section-title mb-4">Small Changes, <span>Significant Effects</span></h2>
+                        <p class="lead text-muted">We think that little changes have significant effects. By choosing
+                            Eatons, businesses can encourage positive environmental change without compromising on
+                            functionality or aesthetics.</p>
                     </div>
                 </div>
 
@@ -321,9 +384,9 @@
                                 <div class="icon-box-sus">
                                     <i class="ri-leaf-line"></i>
                                 </div>
-                                <h4>Conscious Consumption</h4>
-                                <p>Today, customers are increasingly conscious and
-                                    appreciate companies that are responsible for how they affect the environment.</p>
+                                <h4>Zero Harm</h4>
+                                <p>Unlike conventional plastic or foam, Eatons products cause zero harm to the
+                                    environment during production or disposal.</p>
                             </div>
                         </div>
                     </div>
@@ -331,12 +394,11 @@
                         <div class="sus-card">
                             <div class="card-body">
                                 <div class="icon-box-sus">
-                                    <i class="ri-global-line"></i>
+                                    <i class="ri-hand-heart-line"></i>
                                 </div>
-                                <h4>Market Intelligence</h4>
-                                <p>Our initiative meets this increasing need by
-                                    helping companies in changing the world and enhancing their place in the
-                                    marketplace.</p>
+                                <h4>Safe for You</h4>
+                                <p>Zero chemical runoff and zero toxins mean our products are
+                                    100% food-safe and hypoallergenic for every user.</p>
                             </div>
                         </div>
                     </div>
@@ -346,10 +408,9 @@
                                 <div class="icon-box-sus">
                                     <i class="ri-seedling-line"></i>
                                 </div>
-                                <h4>Collective Action</h4>
-                                <p>Every action we take in the direction of
-                                    sustainability helps create a cleaner environment and a more accountable sector of
-                                    the economy.</p>
+                                <h4>Regenerative</h4>
+                                <p>Our products return nutrients to the soil, supporting the next cycle of growth and
+                                    agricultural productivity.</p>
                             </div>
                         </div>
                     </div>
@@ -358,7 +419,7 @@
         </section>
 
         <!-- Vision Section -->
-        <section class="section  bg-white">
+        <section class="section  bg-white pt-0">
             <div class="container py-lg-4">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -367,11 +428,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
-                        <h2 class="section-title mb-4">A Future Where Companies <span class="text-primary">Grow
-                                Together</span> with Nature</h2>
-                        <p class="text-muted mb-4 lh-lg">Our vision extends beyond just manufacturing. We aim to build
-                            circular economies where products return to the earth as nutrients, not waste. By partnering
-                            with us, you're not just buying tableware; you're investing in a regenerative system.</p>
+                        <h2 class="section-title mb-4">A Future Where Companies <span>Grow With Nature</span></h2>
+                        <p class="text-muted mb-4 lh-lg">Our vision at Eatons extends beyond simple manufacturing. We
+                            aim to build circular economies where products return to the earth as nutrients, not waste.
+                            By partnering with us, you're investing in a regenerative system that actively heals the
+                            environment while serving modern industrial needs.</p>
 
                         <div class="feature-checklist mt-4">
                             <div class="d-flex align-items-center mb-3">
@@ -397,11 +458,28 @@
                             </div>
                         </div>
 
-                        <div class="mt-5">
-                            <a href="https://esselindia.com/contact/"
-                                class="btn-primary-custom anek-font text-decoration-none">BECOME
-                                A PARTNER <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="section warehouse-cta bg-primary text-white py-5">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2 class="display-lg-5 display-6 fw-medium text-white mb-4">Crafting a <br>Greener Tomorrow.
+                        </h2>
+                        <p class="lead mb-0 opacity-75">Join us in our mission to replace single-use plastics with
+                            premium,
+                            sustainable dinnerware that doesn't compromise on quality or the planet.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end mt-5 mt-lg-0">
+                        <a href="https://esselindia.com/contact/"
+                            class="btn btn-light anek-font px-5 py-3 rounded-pill fw-bold text-primary">BECOME A PARTNER
+                            <i class="ri-arrow-right-line ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -464,7 +542,7 @@
                 </div>
                 <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
                     <img src="images/footerlogo.png" alt="essel" class="footer-logo pe-lg-3 filter-white">
-                    <div class="social-links pe-lg-4">
+                    <div class="social-links pe-lg-4 mb-4">
                         <a href="https://www.facebook.com/esselindia?mibextid=wwXIfr&rdid=AK0vlzDFJYF7S1V8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YFBe1fUZ%2F%3Fmibextid%3DwwXIfr#"
                             target="_blank" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
                         <a href="https://www.instagram.com/eatons_disposables_tableware/?igsh=NHJxc291NTkxdjJn&utm_source=qr#"
@@ -472,6 +550,16 @@
                         <!-- <a href="#" class="text-decoration-none" target="_blank"><i class="ri-youtube-fill"></i></a> -->
                         <a href="https://www.linkedin.com/company/essel-kitchenware-ltd#" class="text-decoration-none"
                             target="_blank"><i class="ri-instagram-line"></i></a>
+                    </div>
+
+                    <div class="available-on text-center pe-lg-4">
+                        <p class="small text-uppercase tracking-wider mb-3 opacity-50">Also Available On</p>
+                        <div class="platform-links d-flex justify-content-center gap-3">
+                            <a href="#" target="_blank" class="platform-link">Amazon</a>
+                            <a href="#" target="_blank" class="platform-link">Flipkart</a>
+                            <a href="#" target="_blank" class="platform-link">Meesho</a>
+                            <a href="#" target="_blank" class="platform-link">Blinkit</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
@@ -483,15 +571,11 @@
                         </div>
                         <div class="info-item">
                             <i class="ri-phone-line"></i>
-                            <a href="tel:+913340509001">+91-33-4050 9001</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="ri-phone-line"></i>
-                            <a href="tel:+919836364000">+91 9836364000 (Customer Support)</a>
+                            <a href="tel:+913340509001">+91 33 4050 9001</a>
                         </div>
                         <div class="info-item">
                             <i class="ri-mail-line"></i>
-                            <a href="mailto:support@esselindia.com">support@esselindia.com</a>
+                            <a href="mailto:sales@esselindia.com">sales@esselindia.com</a>
                         </div>
                     </div>
                 </div>
@@ -507,6 +591,13 @@
 
     </div>
     <div class="footer-watermark">ESSEL INDIA</div>
+
+    <a href="images/eatons_brochure.pdf" target="_blank"
+        class="brochure-sticky rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        id="brochureSticky">
+        <i class="ri-file-pdf-2-line"></i>
+        <span>Download Brochure</span>
+    </a>
 
     <a href="https://wa.me/919836364000" target="_blank"
         class="whatsapp-sticky rounded-circle d-flex align-items-center justify-content-center shadow-lg"

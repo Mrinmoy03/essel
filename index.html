@@ -8,6 +8,8 @@
 <meta name="keywords" content="bootstrap, gulp, sass, modern web design">
 <title>EsselIndia</title>
 
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@HnaS65bJ62D_SwF_dservice_4poov4ptemplate_spv3mu9/dist/email.min.js"></script>
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +27,10 @@
 
 <body>
     <header class="fixed-top pt-4">
-    <div class="container d-flex justify-content-end justify-content-lg-center">
+    <div class="container position-relative d-flex justify-content-end justify-content-lg-center">
         <!-- Centered Pill Navbar -->
         <nav class="navbar navbar-expand-lg navbar-pill bg-white rounded-pill px-lg-4 px-3 py-2 border">
-            <a class="navbar-brand me-lg-5 me-4 text-primary fw-bold py-0" href="index.html">
+            <a class="navbar-brand me-lg-4 me-3 text-primary fw-bold py-0" href="index.html">
                 <!-- <img src="images/logo.svg" alt="essel" height="30"> -->
                 ESSEL
             </a>
@@ -120,13 +122,22 @@
                     <li class="nav-item">
                         <a class="nav-link px-3" href="blog-list.html">BLOG</a>
                     </li>
+
                     <li class="nav-item d-none d-lg-flex ms-lg-3">
-                        <a class="btn-nav-pill" href="https://esselindia.com/contact/">
+                        <!-- Desktop Search Bar -->
+                        <div class="search-wrapper">
+                            <input type="text" class="search-input" placeholder="Search products...">
+                            <i class="ri-search-line search-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-flex ms-lg-1">
+                        <a class="btn-nav-pill" href="contact.html">
                             GET IN TOUCH
                         </a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link px-3" href="https://esselindia.com/contact/">GET IN TOUCH</a>
+                        <a class="nav-link px-3" href="contact.html">GET IN TOUCH</a>
                     </li>
                 </ul>
             </div>
@@ -137,6 +148,7 @@
                 <i class="ri-menu-3-line fs-5"></i>
             </button>
         </nav>
+
     </div>
 </header>
 
@@ -149,6 +161,14 @@
         </button>
     </div>
     <div class="offcanvas-body px-4 pt-2 pb-4">
+        <!-- Mobile Search Bar -->
+        <div class="mobile-search-wrapper">
+            <div class="search-group">
+                <i class="ri-search-line"></i>
+                <input type="text" class="form-control" placeholder="Search products...">
+            </div>
+        </div>
+
         <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
@@ -231,7 +251,7 @@
                 <a class="nav-link" href="blog-list.html">BLOG</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://esselindia.com/contact/"> GET IN TOUCH</a>
+                <a class="nav-link" href="contact.html"> GET IN TOUCH</a>
             </li>
         </ul>
 
@@ -247,8 +267,7 @@
                     <!-- Slide 1 – Essel India -->
                     <div class="swiper-slide">
                         <div class="hero-bg">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920"
-                                alt="Industrial Manufacturing">
+                            <img src="images/warehouse-banner.jpg" alt="Industrial Manufacturing" class="img-fluid">
                         </div>
                         <div class="container h-100">
                             <div class="row h-100 align-items-center justify-content-center">
@@ -262,7 +281,7 @@
                                             manufacturing strength and operational precision.
                                         </p>
                                         <div class="d-flex justify-content-center">
-                                            <a href="https://esselindia.com/"
+                                            <a href="https://esselindia.com/products/"
                                                 class="btn btn-primary-custom anek-font text-decoration-none">
                                                 EXPLORE OUR SOLUTIONS <i class="ri-arrow-right-up-long-line"></i>
                                             </a>
@@ -276,8 +295,7 @@
                     <!-- Slide 2 – Eatons -->
                     <div class="swiper-slide">
                         <div class="hero-bg">
-                            <img src="https://images.unsplash.com/photo-1717386255773-1e3037c81788?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Sustainable Tableware">
+                            <img src="images/eaton-banner.jpg" alt="Sustainable Tableware" class="img-fluid">
                         </div>
                         <div class="container h-100">
                             <div class="row h-100 align-items-center justify-content-center">
@@ -344,7 +362,7 @@
                                             Infrastructure That Powers Reliability
                                         </h1>
                                         <p class="hero-subtitle">
-                                            Efficient warehousing, streamlined logistics, and dependable distribution
+                                            Efficient warehousing, streamlined , and dependable distribution
                                             across markets.
                                         </p>
                                         <div class="d-flex justify-content-center">
@@ -420,8 +438,8 @@
 
                     <div class="col-lg-9 text-center">
                         <h2 class="h3 fw-medium mb-5 typing-text">
-                            At Essel India, we go beyond packaging — offering a complete ecosystem of packaging
-                            products, EPE solutions, warehousing, and logistics to power modern business growth.
+                            At Essel India, we go beyond manufacturing — delivering a complete ecosystem of packaging
+                            products, advanced EPE solutions, and industrial infrastructure.
                         </h2>
 
                         <a href="about.html" class="btn btn-primary-custom anek-font text-decoration-none mb-5">
@@ -543,10 +561,75 @@
                                 </div>
                             </div>
                         </div>
+                    </div>`
+                </div>
+            </div>
+        </section>
+        <!-- Why Essel Section -->
+        <section class="section why-choose-essel ">
+            <div class="container">
+                <div class="row section-intro align-items-center gy-4 mb-5">
+                    <div class="col-lg-5">
+                        <div class="pre-title mb-4">// WHY ESSEL?</div>
+                        <h2 class="section-title">Decades of <span>Industrial Excellence</span></h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <p class="section-desc mb-0 text-dark">
+                            Beyond manufacturing, we provide the infrastructure and expertise that modern businesses
+                            depend on. Our commitment to quality, scale, and sustainability makes us the preferred
+                            industrial partner.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card-premium">
+                            <div class="feature-icon-box">
+                                <i class="ri-history-line"></i>
+                            </div>
+                            <h4 class="feature-title">31+ Years Legacy</h4>
+                            <p class="feature-desc small">Decades of proven industrial expertise, delivering reliability
+                                and operational excellence you can trust.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card-premium">
+                            <div class="feature-icon-box">
+                                <i class="ri-focus-3-line"></i>
+                            </div>
+                            <h4 class="feature-title">Diversified Leadership</h4>
+                            <p class="feature-desc small">Pioneers across EPS, EPE, sustainable tableware, and
+                                industrial
+                                infrastructure solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card-premium">
+                            <div class="feature-icon-box">
+                                <i class="ri-database-line"></i>
+                            </div>
+                            <h4 class="feature-title">Manufacturing at Scale</h4>
+                            <p class="feature-desc small">Advanced production facilities in West Bengal, ensuring
+                                precision
+                                manufacturing and steady bulk supply.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card-premium">
+                            <div class="feature-icon-box">
+                                <i class="ri-user-heart-line"></i>
+                            </div>
+                            <h4 class="feature-title">Customer-Centric</h4>
+                            <p class="feature-desc small">Dedicated industrial assistance and capital-efficient
+                                solutions
+                                for 50,000+ satisfied customers.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="section pb-lg-0 bg-white">
             <div class="container">
                 <div class="row justify-content-center ">
@@ -709,6 +792,55 @@
             </div>
         </section>
 
+
+
+        <section class="section certified-section bg-white overflow-hidden pt-0">
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="pre-title anek-font mb-4">// TRUSTED EXCELLENCE</div>
+                        <h2 class="section-title">Globally <span>Certified & Recognized</span></h2>
+                        <p class="section-desc mt-3">Our commitment to quality is backed by international standards and
+                            stringent certifications across all manufacturing verticals.</p>
+                    </div>
+                </div>
+
+                <div class="swiper certified-swiper mt-4 pb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="https://placehold.co/400x500?text=ISO+9001:2015" alt="ISO Certification"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="https://placehold.co/400x500?text=ISO+14001:2015" alt="ISO Certification"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="https://placehold.co/400x500?text=MSME+ZED+Gold" alt="MSME Certification"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="https://placehold.co/400x500?text=CE+Mark" alt="CE Mark" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="https://placehold.co/400x500?text=FSSAI+License" alt="FSSAI"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Warehouse Section -->
         <section
             class="warehouse-section section  overflow-hidden position-relative bg-dark text-white d-flex flex-column">
@@ -774,17 +906,18 @@
                         <div class="product-card">
                             <div class="product-image-wrapper">
                                 <span class="badge-product">NEW</span>
-                                <img src="https://placehold.co/600x600?text=Printed+Cups" alt="Printed Cups"
-                                    class="img-fluid">
+                                <img src="images/product/essel-1.jpg" alt="Reusable Food Containers" class="img-fluid">
                                 <div class="product-overlay d-none d-lg-block">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/reuse-food-containers/"
+                                        class="btn btn-buy w-100">BUY NOW</a>
                                 </div>
                             </div>
                             <div class="product-info mt-4">
-                                <h4 class="product-name h5 fw-medium mb-1">Printed Cups (250ml)</h4>
-                                <p class="product-price mb-0">₹299.00 – ₹699.00</p>
+                                <h4 class="product-name h5 fw-medium mb-1">Reusable Food Containers</h4>
+
                                 <div class="mt-3 d-lg-none">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/reuse-food-containers/"
+                                        class="btn btn-buy w-100">BUY NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -794,17 +927,18 @@
                         <div class="product-card">
                             <div class="product-image-wrapper">
                                 <span class="badge-product">NEW</span>
-                                <img src="https://placehold.co/600x600?text=PP+Containers" alt="PP Containers"
-                                    class="img-fluid">
+                                <img src="images/product/essel-2.jpg" alt="PP Containers" class="img-fluid">
                                 <div class="product-overlay d-none d-lg-block">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/reuse-food-containers/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                             <div class="product-info mt-4">
-                                <h4 class="product-name h5 fw-medium mb-1">PP Injection Molded Containers</h4>
-                                <p class="product-price mb-0">₹450.00 – ₹899.00</p>
+                                <h4 class="product-name h5 fw-medium mb-1">PP Containers</h4>
+
                                 <div class="mt-3 d-lg-none">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/reuse-food-containers/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -813,17 +947,17 @@
                     <div class="col-lg-4 col-md-6 product-item" data-category="essel">
                         <div class="product-card">
                             <div class="product-image-wrapper">
-                                <span class="badge-product">SALE</span>
-                                <img src="https://placehold.co/600x600?text=PE+Rolls" alt="PE Rolls" class="img-fluid">
+                                <span class="badge-product">NEW</span>
+                                <img src="images/product/essel-3.jpg" alt="Custom Printed Cups" class="img-fluid">
                                 <div class="product-overlay d-none d-lg-block">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="#inquiery" class="btn btn-buy w-100 text-decoration-none">INQUIRY NOW</a>
                                 </div>
                             </div>
                             <div class="product-info mt-4">
-                                <h4 class="product-name h5 fw-medium mb-1">PE Rolls & Sheets</h4>
-                                <p class="product-price mb-0">₹1,200.00 – ₹2,500.00</p>
+                                <h4 class="product-name h5 fw-medium mb-1">Custom Printed Cups</h4>
+
                                 <div class="mt-3 d-lg-none">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="#inquiery" class="btn btn-buy w-100 text-decoration-none">INQUIRY NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -834,17 +968,18 @@
                         <div class="product-card">
                             <div class="product-image-wrapper">
                                 <span class="badge-product">NEW</span>
-                                <img src="https://placehold.co/600x600?text=Bagasse+Bowls" alt="Bagasse Bowls"
-                                    class="img-fluid">
+                                <img src="images/product/eatons-1.jpg" alt="Bagasse Bowls" class="img-fluid">
                                 <div class="product-overlay d-none d-lg-block">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/tableware/bowl/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                             <div class="product-info mt-4">
-                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Disposable Bowls (350 ml)</h4>
-                                <p class="product-price mb-0">₹299.00 – ₹499.00</p>
+                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Bowls </h4>
+
                                 <div class="mt-3 d-lg-none">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/tableware/bowl/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -854,17 +989,19 @@
                         <div class="product-card">
                             <div class="product-image-wrapper">
                                 <span class="badge-product">SALE</span>
-                                <img src="https://placehold.co/600x600?text=Plates" alt="Plates" class="img-fluid">
+                                <img src="images/product/eatons-2.jpg" alt="Plates" class="img-fluid">
                                 <div class="product-overlay d-none d-lg-block">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/tableware/plates/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                             <div class="product-info mt-4">
-                                <h4 class="product-name h5 fw-medium mb-1">Disposable 4 Compartment Plates (11 Inch)
+                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Round Dinner Plates
                                 </h4>
-                                <p class="product-price mb-0">₹399.00 – ₹1,199.00</p>
+
                                 <div class="mt-3 d-lg-none">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/tableware/plates/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -874,17 +1011,18 @@
                         <div class="product-card">
                             <div class="product-image-wrapper">
                                 <span class="badge-product">NEW</span>
-                                <img src="https://placehold.co/600x600?text=Dinner+Plates" alt="Dinner Plates"
-                                    class="img-fluid">
+                                <img src="images/product/eatons-3.jpg" alt="Dinner Plates" class="img-fluid">
                                 <div class="product-overlay d-none d-lg-block">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/tableware/compartment-plate/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                             <div class="product-info mt-4">
-                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Round Dinner Plates (10 Inch)</h4>
-                                <p class="product-price mb-0">₹499.00 – ₹899.00</p>
+                                <h4 class="product-name h5 fw-medium mb-1">Bagasse Compartment Plate</h4>
+
                                 <div class="mt-3 d-lg-none">
-                                    <button class="btn btn-buy w-100">BUY NOW</button>
+                                    <a href="https://esselindia.com/product-category/tableware/compartment-plate/"
+                                        class="btn btn-buy w-100 text-decoration-none">BUY NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -905,6 +1043,9 @@
 
 
         <!-- Testimonials Section -->
+        <!-- Globally Certified Section -->
+
+
         <section class="section testimonials-section bg-light overflow-hidden">
             <div class="container">
                 <div class="row align-items-center justify-content-between mb-5">
@@ -1043,7 +1184,7 @@
         </section>
 
         <!-- Blog Section -->
-        <section class="section blog-section bg-white " id="blog">
+        <!-- <section class="section blog-section bg-white " id="blog">
             <div class="container">
                 <div class="row align-items-center justify-content-between mb-5 gy-4">
                     <div class="col-lg-5">
@@ -1091,7 +1232,7 @@
                     </div>
                 </div>
                 <div class="row mt-5 gy-5">
-                    <!-- Blog Card 1 -->
+                
                     <div class="col-lg-4">
                         <a href="blog-single.html" class="blog-grid-card text-decoration-none">
                             <div class="blog-grid-image-wrapper mb-4">
@@ -1106,7 +1247,7 @@
                         </a>
                     </div>
 
-                    <!-- Blog Card 2 -->
+                
                     <div class="col-lg-4">
                         <a href="blog-single.html" class="blog-grid-card text-decoration-none">
                             <div class="blog-grid-image-wrapper mb-4">
@@ -1121,7 +1262,7 @@
                         </a>
                     </div>
 
-                    <!-- Blog Card 3 -->
+        
                     <div class="col-lg-4">
                         <a href="blog-single.html" class="blog-grid-card text-decoration-none">
                             <div class="blog-grid-image-wrapper mb-4">
@@ -1135,6 +1276,112 @@
                             <h4 class="blog-grid-title">Scaling Your Supply Chain With Reliable Packaging
                             </h4>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- 2-Column Side-by-Side Inquiry Section -->
+        <section class="section inquiry-section inquiry-section-compact" id="inquiery">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <span class="pre-title mb-3">GET IN TOUCH</span>
+                        <div class="compact-content-col">
+
+                            <h2 class="fw-medium">Partner with the Leaders in <span class="text-primary">Premium
+                                    Packaging</span></h2>
+                            <p class="mb-5">Whether you're looking for sustainable tableware or high-performance
+                                industrial protection, our team is ready to deliver tailored solutions that scale with
+                                your business.</p>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-circle bg-primary-soft text-primary me-3">
+                                    <i class="ri-customer-service-2-line fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-medium">Expert Consultation</h6>
+                                    <p class="small mb-0 text-muted">Get technical advice on the best materials for your
+                                        needs.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-circle bg-primary-soft text-primary me-3">
+                                    <i class="ri-pencil-ruler-2-line fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-medium">Tailored Solutions</h6>
+                                    <p class="small mb-0 text-muted">Customized packaging designs that perfectly align
+                                        with your brand.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-circle bg-primary-soft text-primary me-3">
+                                    <i class="ri-truck-line fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-medium">Swift Logistics</h6>
+                                    <p class="small mb-0 text-muted">On-time delivery across our extensive pan-India
+                                        network.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="inquiry-form-wrapper">
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Full Name</label>
+                                            <input type="text" name="name" class="form-control" placeholder="John Doe"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Email Address</label>
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="john@example.com" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" name="number" class="form-control" placeholder="+91 XXXXX XXXXX"
+                                        required>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label d-block mb-3">Inquiry Type</label>
+                                    <div class="inquiry-type-group">
+                                        <label class="inquiry-chip">
+                                            <input type="radio" name="terms" value="General Inquiry" checked required>
+                                            <span>General Inquiry</span>
+                                        </label>
+                                        <label class="inquiry-chip">
+                                            <input type="radio" name="terms" value="Bulk Inquiry" required>
+                                            <span>Bulk Inquiry</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Your Message</label>
+                                    <textarea name="message" class="form-control" placeholder="Your requirements..."
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-submit">
+                                    SEND INQUIRY <i class="ri-send-plane-fill ms-2"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1197,7 +1444,7 @@
                 </div>
                 <div class="col-lg-5 col-md-4 footer-logo-area py-lg-0 pe-lg-5 py-4 order-lg-3 order-last text-center">
                     <img src="images/footerlogo.png" alt="essel" class="footer-logo pe-lg-3 filter-white">
-                    <div class="social-links pe-lg-4">
+                    <div class="social-links pe-lg-4 mb-4">
                         <a href="https://www.facebook.com/esselindia?mibextid=wwXIfr&rdid=AK0vlzDFJYF7S1V8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YFBe1fUZ%2F%3Fmibextid%3DwwXIfr#"
                             target="_blank" class="text-decoration-none"><i class="ri-facebook-fill"></i></a>
                         <a href="https://www.instagram.com/eatons_disposables_tableware/?igsh=NHJxc291NTkxdjJn&utm_source=qr#"
@@ -1205,6 +1452,16 @@
                         <!-- <a href="#" class="text-decoration-none" target="_blank"><i class="ri-youtube-fill"></i></a> -->
                         <a href="https://www.linkedin.com/company/essel-kitchenware-ltd#" class="text-decoration-none"
                             target="_blank"><i class="ri-instagram-line"></i></a>
+                    </div>
+
+                    <div class="available-on text-center pe-lg-4">
+                        <p class="small text-uppercase tracking-wider mb-3 opacity-50">Also Available On</p>
+                        <div class="platform-links d-flex justify-content-center gap-3">
+                            <a href="#" target="_blank" class="platform-link">Amazon</a>
+                            <a href="#" target="_blank" class="platform-link">Flipkart</a>
+                            <a href="#" target="_blank" class="platform-link">Meesho</a>
+                            <a href="#" target="_blank" class="platform-link">Blinkit</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-12 footer-column order-lg-4 ps-lg-5">
@@ -1216,15 +1473,11 @@
                         </div>
                         <div class="info-item">
                             <i class="ri-phone-line"></i>
-                            <a href="tel:+913340509001">+91-33-4050 9001</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="ri-phone-line"></i>
-                            <a href="tel:+919836364000">+91 9836364000 (Customer Support)</a>
+                            <a href="tel:+913340509001">+91 33 4050 9001</a>
                         </div>
                         <div class="info-item">
                             <i class="ri-mail-line"></i>
-                            <a href="mailto:support@esselindia.com">support@esselindia.com</a>
+                            <a href="mailto:sales@esselindia.com">sales@esselindia.com</a>
                         </div>
                     </div>
                 </div>
@@ -1240,6 +1493,13 @@
 
     </div>
     <div class="footer-watermark">ESSEL INDIA</div>
+
+    <a href="images/eatons_brochure.pdf" target="_blank"
+        class="brochure-sticky rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        id="brochureSticky">
+        <i class="ri-file-pdf-2-line"></i>
+        <span>Download Brochure</span>
+    </a>
 
     <a href="https://wa.me/919836364000" target="_blank"
         class="whatsapp-sticky rounded-circle d-flex align-items-center justify-content-center shadow-lg"
